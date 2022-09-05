@@ -1,4 +1,159 @@
-html, body {
-  height: 100%;
+:root {
+  --tex-color: #a5a5a5;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+}
+
+.empty-page-placeholder {
+  color: #787878;
+  font-size: 1.3rem;
+  margin: 200px auto 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+header {
+  background-color: #0e0e0e;
+  height: 210px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3em;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Search bar*/
+.search-bar,
+.btn-search,
+input {
+  height: 40px;
+}
+
+.search-bar {
+  display: flex;
+  width: 70%;
+  padding-left: 0.3em;
+  margin: 0 auto;
+  background-color: #2e2e2f;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.btn-search {
+  background-color: #4b4b4b;
+  color: #fff;
+  width: 130px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar input {
+  background-color: #2e2e2f;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  flex-grow: 1;
+  padding-left: 1em;
+}
+
+
+/*Movie card*/
+#movies,
+#watchlist-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 20px;
   width: 100%;
+  height: calc(100vh - 210px);
+}
+
+.movie-card {
+  display: flex;
+  padding: 2em 1em;
+  height: 300px;
+}
+
+.movie-card>img {
+  height: 100%;
+}
+
+.movie-info {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-info p {
+  color: var(--tex-color);
+}
+
+.top {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  color: var(--white);
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description p,
+button {
+  color: var(--white);
+}
+
+.btn-wrapper {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.btn-wrapper img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-wrapper button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+/*Watchlist*/
+a.search-movies-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 1em;
+  gap: 10px;
+}
+
+a img {
+  height: 30px;
+  width: 30px;
 }
