@@ -4,7 +4,7 @@ const moviesContainer = document.getElementById("movies");
 
 function searchMovie() {
     moviesContainer.innerHTML = "";
-    fetch(`http://www.omdbapi.com/?s=${searchInput.value}&apikey=91a4b86f`)
+    fetch(`https://www.omdbapi.com/?s=${searchInput.value}&apikey=91a4b86f`)
         .then((res) => {
             if (!res.ok) {
                 throw Error("Erro ao buscar filmes");
@@ -15,7 +15,7 @@ function searchMovie() {
         .then((data) => {
             const arrayOfMovies = [];
             for (let i = 0; i < data.Search.length; i++) {
-                fetch(`http://www.omdbapi.com/?i=${data.Search[i].imdbID}&apikey=91a4b86f`)
+                fetch(`https://www.omdbapi.com/?i=${data.Search[i].imdbID}&apikey=91a4b86f`)
                     .then(res => {
                         if (!res.ok) {
                             throw Error("Erro ao buscar filmes");
