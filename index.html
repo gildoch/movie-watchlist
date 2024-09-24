@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Watchme</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <header>
-    <h2>Find your film</h2>
-    <a href="./watchlist.html">My watchlist</a>
-  </header>
-  <div class="search-bar">
-    <img src="./assets/Icon.svg" />
-    <input type="text" name="search-input" id="search-input" />
-    <button id="search-btn" class="btn-search">Search</button>
-  </div>
-  <div id="movies">
-    <div class="empty-page-placeholder" id="fail-search-placeholder">
-      <img src="./assets/searchPlaceholder.png" />
-      <p>Start exploring</p>
+  <body>
+    <header>
+      <h2>Find your film</h2>
+      <a href="./watchlist.html">My watchlist</a>
+    </header>
+    <div class="search-bar">
+      <img src="./assets/Icon.svg"  alt="search icon"/>
+      <input type="text" name="search-input" id="search-input" />
+      <button id="search-btn" class="btn-search">Search</button>
     </div>
-  </div>
-  <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
-</body>
-
+    <div id="movies">
+      <div class="empty-page-placeholder" id="fail-search-placeholder">
+        <img src="./assets/searchPlaceholder.png" alt="movie image placeholder"/>
+        <p>Start exploring</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
